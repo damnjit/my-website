@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'DM Sans',sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(60,70,80,0.45),rgba(60,70,80,0.45)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* HEADER */
+header{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:1400px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:35px 0;
+}
+
+/* LOGO */
+.logo{
+    width:78px;
+    height:78px;
+    border:2px solid rgba(255,255,255,0.8);
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:transparent;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    filter:invert(1);
+}
+
+/* NAV */
+nav{
+    display:flex;
+    gap:55px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:400;
+    letter-spacing:0.5px;
+}
+
+/* PHONE */
+.phone-btn{
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,0.8);
+    padding:16px 38px;
+    border-radius:4px;
+    font-size:16px;
+}
+
+/* CONTENT CENTER */
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    max-width:900px;
+}
+
+/* SMALL TEXT */
+.content h2{
+    font-size:40px;
+    font-weight:300;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+/* BIG TITLE */
+.content h1{
+    font-size:90px;
+    font-weight:300;
+    line-height:1;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+/* DESCRIPTION */
+.content p{
+    font-size:20px;
+    max-width:600px;
+    margin:0 auto 35px;
+    line-height:1.7;
+    opacity:0.95;
+}
+
+/* BUTTON */
+.btn{
+    background:#f4d328;
+    border:none;
+    padding:20px 55px;
+    font-size:18px;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e6c21f;
+    transform:translateY(-2px);
+}
+
+/* CUSTOMIZE */
+.customize{
+    position:absolute;
+    right:20px;
+    top:45%;
+    background:white;
+    padding:18px 22px;
+    font-size:16px;
+    border-radius:4px;
+}

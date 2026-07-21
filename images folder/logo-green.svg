@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="86" height="72" role="img" aria-label="Love Nature logo">
+  <g fill="none" stroke="#536942" stroke-linecap="round" stroke-width="2">
+    <path d="M24 13C12 25 11 55 31 68" />
+    <path d="M56 13c12 12 13 42-7 55" />
+  </g>
+  <g fill="#536942">
+    <ellipse cx="22" cy="16" rx="3" ry="6" transform="rotate(42 22 16)" />
+    <ellipse cx="17" cy="23" rx="3" ry="6" transform="rotate(55 17 23)" />
+    <ellipse cx="15" cy="31" rx="3" ry="6" transform="rotate(72 15 31)" />
+    <ellipse cx="15" cy="40" rx="3" ry="6" transform="rotate(88 15 40)" />
+    <ellipse cx="18" cy="49" rx="3" ry="6" transform="rotate(110 18 49)" />
+    <ellipse cx="24" cy="58" rx="3" ry="6" transform="rotate(130 24 58)" />
+    <ellipse cx="58" cy="16" rx="3" ry="6" transform="rotate(-42 58 16)" />
+    <ellipse cx="63" cy="23" rx="3" ry="6" transform="rotate(-55 63 23)" />
+    <ellipse cx="65" cy="31" rx="3" ry="6" transform="rotate(-72 65 31)" />
+    <ellipse cx="65" cy="40" rx="3" ry="6" transform="rotate(-88 65 40)" />
+    <ellipse cx="62" cy="49" rx="3" ry="6" transform="rotate(-110 62 49)" />
+    <ellipse cx="56" cy="58" rx="3" ry="6" transform="rotate(-130 56 58)" />
+    <text x="40" y="50" text-anchor="middle" font-family="Forum, Georgia, serif" font-size="33" font-weight="600">N</text>
+  </g>
+</svg>

@@ -1,0 +1,270 @@
+:root {
+  --green: #536942;
+  --soft-green: #6a7455;
+  --pale: #f6f8f4;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--green);
+  background: var(--white);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.hero {
+  min-height: 265px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(47, 56, 48, 0.32), rgba(47, 56, 48, 0.32)),
+    url("images folder/about background.jpg")
+      center 46% / cover no-repeat;
+}
+
+.site-nav {
+  width: min(750px, calc(100% - 48px));
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  display: block;
+}
+
+.logo-mark {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.logo-light {
+  color: var(--white);
+}
+
+.logo-dark {
+  color: var(--green);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.phone-link {
+  min-width: 98px;
+  margin-left: 3px;
+  padding: 8px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 45px 0 0;
+  color: var(--white);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(43px, 4vw, 59px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.intro-section {
+  padding: 83px 24px 47px;
+  text-align: center;
+}
+
+.intro-section p {
+  max-width: 430px;
+  margin: 0 auto;
+  color: var(--green);
+  font-family: "Forum", Georgia, serif;
+  font-size: 24px;
+  line-height: 1.28;
+}
+
+.feature-section {
+  max-width: 654px;
+  margin: 0 auto;
+  padding: 0 0 44px;
+}
+
+.feature-image {
+  height: 300px;
+  object-fit: cover;
+  object-position: center 43%;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 82px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.info-grid h2 {
+  margin: 0 0 12px;
+  color: var(--green);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info-grid p {
+  margin: 0;
+  color: var(--soft-green);
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.testimonial-section {
+  margin-top: 0;
+  padding: 43px 24px 47px;
+  background: var(--pale);
+  text-align: center;
+}
+
+.quote-mark {
+  height: 28px;
+  color: #c4ccb8;
+  font-family: Georgia, serif;
+  font-size: 50px;
+  line-height: 0.8;
+}
+
+.testimonial-section blockquote {
+  max-width: 405px;
+  margin: 14px auto 29px;
+  color: var(--green);
+  font-family: "Forum", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.avatar {
+  width: 31px;
+  height: 31px;
+  margin: 0 auto 7px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author {
+  margin: 0;
+  color: var(--soft-green);
+  font-size: 8px;
+}
+
+.site-footer {
+  min-height: 63px;
+  width: min(705px, calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  color: var(--green);
+}
+
+.site-footer .logo {
+  width: 43px;
+  height: 43px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 10px;
+}
+
+.site-footer p {
+  margin: 0;
+  justify-self: end;
+  font-size: 10px;
+}
+
+@media (max-width: 760px) {
+  .site-nav {
+    width: calc(100% - 32px);
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    max-width: 250px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .intro-section {
+    padding-top: 64px;
+  }
+
+  .feature-section {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-top: 38px;
+  }
+
+  .site-footer {
+    min-height: 150px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 16px;
+    padding: 22px 0;
+  }
+
+  .site-footer p {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 320px;
+  }
+
+  .hero h1 {
+    margin-top: 92px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

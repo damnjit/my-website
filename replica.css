@@ -1,0 +1,48 @@
+/* Replica hero styles (uses DM Sans for body, Forum for large heading) */
+:root{
+  --accent:#f3c233;
+  --white: #ffffff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'DM Sans',Arial,sans-serif;color:#2b2b2b}
+
+.site-header{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;z-index:20}
+.logo{width:60px;height:60px;display:block}
+.logo-mark{width:100%;height:100%;object-fit:contain}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:rgba(255,255,255,0.95);text-decoration:none;font-weight:500}
+.phone-btn{color:#fff;border:1px solid rgba(255,255,255,0.7);padding:10px 18px;border-radius:6px;text-decoration:none}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 1rem;background-image:linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)), url('images folder/about background.jpg');background-size:cover;background-position:center}
+
+.hero-content{max-width:820px;text-align:center;color:var(--white);padding:40px 28px;border-radius:20px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.12);box-shadow:0 18px 40px rgba(0,0,0,0.28)}
+.eyebrow{text-transform:lowercase;color:rgba(255,255,255,0.98);letter-spacing:-3px;margin-bottom:8px;font-weight:400;font-size:50px}
+.hero-title{font-family:'Forum',serif;font-size:117px;line-height:0.95;margin:0;color:#ffffff;text-transform:none}
+.hero-sub{color:rgba(255,255,255,0.92);max-width:560px;margin:16px auto 26px;line-height:1.6;font-size:18px}
+.hero-actions{display:flex;justify-content:center;margin-top:18px}
+.btn-primary{background:var(--accent);color:#2b2b2b;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 0 rgba(0,0,0,0.08)}
+
+.intro-section{max-width:980px;margin:48px auto;padding:0 20px;text-align:center;color:#4a4a4a}
+.site-footer{text-align:center;padding:34px 10px;color:#6c6c6c}
+
+@media (max-width:1200px){
+  .hero-title{font-size:9.5rem}
+  .eyebrow{font-size:36px}
+}
+
+@media (max-width:900px){
+  .nav-links{display:none}
+  .hero-title{font-size:72px}
+  .eyebrow{font-size:24px}
+  .site-header{padding:12px 20px}
+}
+
+@media (max-width:480px){
+  .hero-content{padding:28px 16px;border-radius:14px}
+  .btn-primary{padding:12px 20px}
+  .hero-title{font-size:48px}
+  .eyebrow{font-size:18px}
+  .hero-sub{font-size:15px}
+}
+
+.hero-content{margin-top:-50px}
